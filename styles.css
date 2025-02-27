@@ -52,6 +52,76 @@ select {
 }
 /* CSS Reset */
 
+/* Body */
 body {
   font-family: "IBM Plex Mono", serif;
+  background-color: #e2f6ff;
+}
+
+/* Container */
+.calculator-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Calculator */
+.calculator {
+  background-color: #3b4554;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+/* Calculation */
+.calculation {
+  max-width: 19rem;
+  font-size: 2rem;
+  text-align: right;
+  background-color: #3b4554;
+  border: none;
+  outline: none;
+  margin-block: 1rem 2rem;
+  color: #fff;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.row-1,
+.row-2,
+.row-3,
+.row-4,
+.row-5 {
+  display: flex;
+  gap: 1rem;
+}
+
+.row-5 :nth-child(3) {
+  flex-grow: 1;
+}
+
+.buttons input {
+  width: 4rem;
+  height: 4rem;
+  background-color: #3b4554;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.1),
+    5px 5px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.row-1 input,
+.row-2 :nth-child(4),
+.row-3 :nth-child(4),
+.row-4 :nth-child(4),
+.row-5 :nth-child(3) {
+  color: #66f2e0;
 }
